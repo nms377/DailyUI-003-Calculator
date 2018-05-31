@@ -33,6 +33,12 @@ button {
 	background: linear-gradient(#01579b, #80deea);
 }
 
+@media only screen and (max-width: 500px) {
+	header, #calcContainer {
+		margin-top: 1rem;
+	}
+}
+
 #displayContainer {
 	grid-column: 1/3;
 	grid-row: 1;
