@@ -1,0 +1,218 @@
+html {
+	width: 100%;
+}
+
+body {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	width: 100%;
+	font-family: sans-serif;
+	background-color: rgb(55, 55, 55);
+}
+
+header {
+	margin-top: 4rem;
+	font-size: 2rem;
+	color: rgb(255, 255, 255);
+}
+
+#displayContainer,
+button {
+	color: rgb(255, 255, 255);
+}
+
+#calcContainer {
+	display: grid;
+	grid-template-columns: 2fr, auto;
+	margin-top: 4rem;
+	border-radius: 8px;
+	background: linear-gradient(#01579b, #80deea);
+}
+
+#displayContainer {
+	grid-column: 1/3;
+	grid-row: 1;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	height: 8rem;
+	font-size: 4rem;
+}
+
+#displayContainer > h1 {
+	text-align: right;
+	align-self: flex-end;
+	padding-right: .75rem;
+	padding-bottom: .75rem;
+}
+
+button {
+	height: 4rem;
+	width: 100%;
+	border: none;
+	background-color: transparent;
+	font-size: 1rem;
+	font-weight: 600;
+}
+
+#numbers {
+	grid-column: 1/2;
+	grid-row: 2;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+}
+
+#clear {
+	grid-column: 1/2;
+	grid-row: 1;
+}
+
+#nine {
+	grid-column: 3/4;
+	grid-row: 1;
+}
+
+#eight {
+	grid-column: 2/3;
+	grid-row: 1;
+}
+
+#seven {
+	grid-column: 3/4;
+	grid-row: 2;
+}
+
+#six {
+	grid-column: 2/3;
+	grid-row: 2;
+}
+
+#five {
+	grid-column: 1/2;
+	grid-row: 2;
+}
+
+#four {
+	grid-column: 3/4;
+	grid-row: 3;
+}
+
+#three {
+	grid-column: 2/3;
+	grid-row: 3;
+}
+
+#two {
+	grid-column: 1/2;
+	grid-row: 3;
+}
+
+#one {
+	grid-column: 1/2;
+	grid-row: 4;
+}
+
+#zero {
+	grid-column: 2/3;
+	grid-row: 4;
+}
+
+#decimal {
+	grid-column: 3/4;
+	grid-row: 4;
+}
+
+#clear,
+#five,
+#two,
+#one {
+	border: 1px solid rgb(255, 255, 255);
+	border-bottom: none;
+	border-left: none;
+}
+
+#divide,
+#multiply,
+#subtract,
+#add {
+	border: 1px solid rgb(255, 255, 255);
+	border-bottom: none;
+	border-right: none;
+}
+
+#eight,
+#six,
+#three,
+#zero {
+	border: 1px solid rgb(255, 255, 255);
+	border-left: none;
+	border-bottom: none;
+}
+
+#nine,
+#seven,
+#four,
+#decimal {
+	border: 1px solid rgb(255, 255, 255);
+	border-right: none;
+	border-bottom: none;
+	border-left: none;
+}
+
+#equals {
+	border-top: 1px solid rgb(255, 255, 255);
+	border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+#depositCash {
+	border-right: 1px solid rgb(255, 255, 255);
+	border-left: 1px solid rgb(255, 255, 255);
+}
+
+#operators {
+	grid-column: 2/3;
+	grid-row: 2;
+	display: flex;
+	flex-flow: column nowrap;
+	font-size: 2rem;
+}
+
+#operators > div:first-child {
+	padding: 0;
+}
+
+#register {
+	grid-column: 1/3;
+	grid-row: 3;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+}
+
+#equals {
+	grid-column: 1/4;
+	grid-row: 1;
+	justify-self: center;
+	width: 100%;
+}
+
+#equals > button {
+	width: 100%;
+}
+
+#getBalance {
+	grid-column: 1/2;
+	grid-row: 2;
+}
+
+#depositCash {
+	grid-column: 2/3;
+	grid-row: 2;
+}
+
+#withdrawCash {
+	grid-column: 3/4;
+	grid-row: 2;
+}
