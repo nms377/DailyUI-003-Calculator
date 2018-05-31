@@ -25,6 +25,9 @@ button {
 #calcContainer {
 	display: grid;
 	grid-template-columns: 2fr, auto;
+	min-width: 300px;
+	width: 45%;
+	max-width: 321px;
 	margin-top: 4rem;
 	border-radius: 8px;
 	background: linear-gradient(#01579b, #80deea);
@@ -36,6 +39,7 @@ button {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;
+	width: 100%;
 	height: 8rem;
 	font-size: 4rem;
 }
