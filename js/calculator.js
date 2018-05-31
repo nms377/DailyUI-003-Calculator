@@ -21,7 +21,7 @@
   function _load (x) {
     //validator(x);
     _total = x;
-    return _total;
+    return _total.toFixed(2);
   }
 
 
@@ -74,9 +74,6 @@
      _total = x / y;
      return _total;
    }
-
-
-
 
   /**
    * Return the value stored at `memory`
